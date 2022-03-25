@@ -1,5 +1,5 @@
 //Unit or no type value is similar to Null in Java
-fun sayHello(greeting:String, itemsToGreet:List<String>){
+fun sayHello(greeting:String, vararg itemsToGreet:String){
     itemsToGreet.forEach { itemToGreet ->
         println("$greeting $itemToGreet")
     }
@@ -27,5 +27,5 @@ fun main() {
     */
 
     val things = mutableListOf("Birds", "Keyboards", "Food")
-    sayHello("Hello", things)
+    sayHello("Hello", "Birds", "Keyboards", "Food")
 }
