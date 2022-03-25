@@ -26,6 +26,6 @@ fun main() {
     map.forEach { key, value ->  println("$key -> $value")}
     */
 
-    val things = mutableListOf("Birds", "Keyboards", "Food")
-    sayHello("Hello", "Birds", "Keyboards", "Food")
+    val things = arrayOf("Birds", "Keyboards", "Food")
+    sayHello("Hello", *things)
 }
