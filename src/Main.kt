@@ -4,5 +4,8 @@ fun sayHello(greeting:String, itemToGreet:String){
 }
 
 fun main() {
-    sayHello("Hello","Kotlin")
+    val things = arrayOf("Birds", "Keyboards", "Food")
+    things.forEach{ thing ->
+        println(thing)
+    }
 }
