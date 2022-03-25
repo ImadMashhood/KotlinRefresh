@@ -1,6 +1,8 @@
 //Unit or no type value is similar to Null in Java
-fun sayHello(greeting:String, itemToGreet:String){
-    println("$greeting $itemToGreet")
+fun sayHello(greeting:String, itemsToGreet:List<String>){
+    itemsToGreet.forEach { itemToGreet ->
+        println("$greeting $itemToGreet")
+    }
 }
 
 fun main() {
@@ -8,12 +10,13 @@ fun main() {
     things.forEachIndexed{ index, thing ->
         println("$thing is at Index $index")
     }*/
+
     /*val things = listOf("Birds", "Keyboards", "Food")
     things.forEach{ thing ->
         println(thing)
     }*/
 
-    val things = mutableListOf("Birds", "Keyboards", "Food")
+    /*val things = mutableListOf("Birds", "Keyboards", "Food")
     things.add("Phone")
     things.forEach { thing->
         println(thing)
@@ -21,6 +24,8 @@ fun main() {
     val map = mutableMapOf(1 to "a", 2 to "b", 3 to "c")
     map.put(4, "d")
     map.forEach { key, value ->  println("$key -> $value")}
+    */
 
-
+    val things = mutableListOf("Birds", "Keyboards", "Food")
+    sayHello("Hello", things)
 }
