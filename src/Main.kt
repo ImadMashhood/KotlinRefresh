@@ -1,14 +1,12 @@
-//Variable Declaration
-val name = "Imad"
-var greeting: String? = null
+fun getGreeting():String{
+    return "Hello World"
+}
+
+//Unit or no type value is similar to Null in Java
+fun sayHello(){
+    println(getGreeting())
+}
 
 fun main() {
-    var greetingToPrint = if(greeting != null) greeting else "Hi"
-    greetingToPrint = when(greeting){
-        null -> "Hi"
-        else -> greetingToPrint
-    }
-    println(greetingToPrint)
-    println(name)
-
+    sayHello()
 }
