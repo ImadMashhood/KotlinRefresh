@@ -5,7 +5,7 @@ fun sayHello(greeting:String, itemToGreet:String){
 
 fun main() {
     val things = arrayOf("Birds", "Keyboards", "Food")
-    things.forEach{ thing ->
-        println(thing)
+    things.forEachIndexed{ index, thing ->
+        println("$thing is at Index $index")
     }
 }
