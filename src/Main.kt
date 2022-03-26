@@ -28,4 +28,11 @@ fun main() {
 
     val things = arrayOf("Birds", "Keyboards", "Food")
     sayHello("Hello", *things)
+
+    sayHello(greeting = "Hi", itemsToGreet = *things)
+
+    val person = Person("first", "last")
+    person.firstName
+
+
 }
