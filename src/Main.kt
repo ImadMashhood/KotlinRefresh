@@ -26,13 +26,14 @@ fun main() {
     map.forEach { key, value ->  println("$key -> $value")}
     */
 
-    val things = arrayOf("Birds", "Keyboards", "Food")
+    /*val things = arrayOf("Birds", "Keyboards", "Food")
     sayHello("Hello", *things)
 
     sayHello(greeting = "Hi", itemsToGreet = *things)
+    */
 
     val person = Person("first", "last")
-    person.firstName
-
+    person.nickName = "firast"
+    person.printInfo()
 
 }
